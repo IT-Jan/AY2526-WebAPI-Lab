@@ -12,12 +12,14 @@ npm i @types/koa-router<br />
 
 <b>Setup the Web Server:</b><br />
     1. npx tsc -init<br />
-    2. edit "tsconfig.json"<br />
-        "outDir": "./out",<br />
-        ...<br />
-        "verbatimModuleSyntax": false,<br />
-    3. Create "out" folder<br />
-    4. Setup the database
+    2. Create "out" folder<br />
+    3. Set up the database
+    4. edit "tsconfig.json"<br />
+    
+        "outDir": "./out",
+        ...
+        "verbatimModuleSyntax": false,
+        
 <br />
 
 <b>Running the code:</b><br />
