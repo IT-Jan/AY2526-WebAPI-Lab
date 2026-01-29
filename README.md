@@ -2,7 +2,7 @@
 
 Packages installation:<br />
 npm i koa koa-bodyparser koa-json koa-logger <br />
-npm i koa-router@11.0.2<br />
+npm i koa-router<br />
 npm i @types/koa<br />
 npm i @types/koa-bodyparser<br />
 npm i @types/koa-json<br />
