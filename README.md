@@ -13,7 +13,7 @@ npm i @types/koa-router<br />
 <b>Setup the Web Server:</b><br />
     1. npx tsc -init<br />
     2. Create "out" folder<br />
-    3. Set up the database
+    3. Set up the database<br />
     4. edit "tsconfig.json"<br />
     
         "outDir": "./out",
