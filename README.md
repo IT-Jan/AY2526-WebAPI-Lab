@@ -22,5 +22,5 @@ npm i @types/koa-router<br />
 
 <b>Running the code:</b><br />
     tsc<br />
-    node .\out\<br />
+    node .\out\ <br />
 <br />
