@@ -11,6 +11,9 @@ npm i @types/koa-router<br />
 npm i sequelize<br/>
 npm i @types/sequelize<br/>
 npm i pg pg-hstore<br/>
+npm install bcrypt<br/>
+npm install @types/bcrypt<br/>
+
 <br />
 
 <b>Setup the Web Server:</b><br />
