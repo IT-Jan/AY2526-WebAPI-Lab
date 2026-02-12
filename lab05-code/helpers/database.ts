@@ -1,44 +1,66 @@
 import { Sequelize, QueryTypes } from "sequelize";
 import config from '../config';
 
-export const run_query = async (query:string, values:any) => {
-    try {
+export const run_query = async (query:any, values:any) => {
+    try{
         const sequelize = new Sequelize(`postgres://${config.user}:${config.password}@${config.host}:${config.port}/${config.database}`);
         await sequelize.authenticate();
-        //query = "SELECT * FROM XX"
         let data = await sequelize.query(query, {
-            replacements: values,
+            replacements:values,
             type: QueryTypes.SELECT
         });
-        await sequelize.close()
+        await sequelize.close();
         return data;
-    } catch (err:any){
-        console.error(err, query, values)
+    }catch (err: any) {
+        console.error(err, query, values);
         throw 'Database query error';
     }
 };
 
-export const run_insert = async function run_insert(query:string, values:any ) {
+export const run_insert = async function run_insert(query: string, values: any) {
     try {
         const sequelize = new Sequelize(`postgres://${config.user}:${config.password}@${config.host}:${config.port}/${config.database}`);
-        await sequelize.authenticate();
-        //query = "INSERT XXX INTO XXX"
+        await sequelize.authenticate()
         let data = await sequelize.query(query, {
             replacements: values,
             type: QueryTypes.INSERT
         });
-        await sequelize.close()
+        await sequelize.close();
         return data;
-    } catch (err:any){
-        console.error(err, query, values)
+    } catch (err:any) {
+        console.error(err, query, values);
         throw 'Database query error';
     }
-}
+};
 
-export const run_update = async (query:string, values:any) => {
-    //Do something
-}
+export const run_update = async (sql:any, values:any) => {
+    try{
+        const sequelize = new Sequelize(`postgres://${config.user}:${config.password}@${config.host}:${config.port}/${config.database}`);
+        await sequelize.authenticate();
+        let data = await sequelize.query(sql, {
+            replacements:values,
+            type: QueryTypes.UPDATE
+        });
+        await sequelize.close();
+        return data;
+    }catch (err: any) {
+        console.error(err, sql, values);
+        throw 'Database query error';
+    }
+};
 
-export const run_delete = async (query:string, values:any) => {
-    //Do something
-}
+export const run_delete = async (query:any, values:any) => {
+    try{
+        const sequelize = new Sequelize(`postgres://${config.user}:${config.password}@${config.host}:${config.port}/${config.database}`);
+        await sequelize.authenticate();
+        let data = await sequelize.query(query, {
+            replacements:values,
+            type: QueryTypes.DELETE
+        });
+        await sequelize.close();
+        return data;
+    }catch (err: any) {
+        console.error(err, query, values);
+        throw 'Database query error';
+    }
+};
