@@ -22,7 +22,7 @@
 <b>Setup the Web Server:</b><br />
     1. npx tsc -init<br />
     2. Create "out" folder<br />
-    3. Set up the database<br />
+    3. Set up the database pgAdmin4 & import sql files<br />
     4. edit "tsconfig.json"<br />
     
         "outDir": "./out",
