@@ -1,6 +1,6 @@
 **WebAPI-Lab**
 
-Packages installation:<br />
+<b>Packages installation:</b><br />
 npm i koa koa-bodyparser koa-json koa-logger <br />
 npm i koa-router<br />
 npm i @types/koa<br />
