@@ -12,6 +12,7 @@ npm i sequelize<br/>
 npm i @types/sequelize<br/>
 npm i pg pg-hstore<br/>
 npm i koa-passport<br/>
+npm i @types/koa-passport<br/>
 npm i passport-http<br/>
 npm i @types/passport-http<br/>
 
