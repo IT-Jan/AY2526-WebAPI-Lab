@@ -1,20 +1,21 @@
 **WebAPI-Lab**
 
 <b>Packages installation:</b><br />
-    npm i koa koa-bodyparser koa-json koa-logger <br />
-    npm i koa-router<br />
-    npm i @types/koa<br />
-    npm i @types/koa-bodyparser<br />
-    npm i @types/koa-json<br />
-    npm i @types/koa-logger<br />
-    npm i @types/koa-router<br />
-    npm i sequelize<br/>
-    npm i @types/sequelize<br/>
-    npm i pg pg-hstore<br/>
-    npm i koa-passport<br/>
-    npm i @types/koa-passport<br/>
-    npm i passport-http<br/>
-    npm i @types/passport-http<br/>
+
+        npm i koa koa-bodyparser koa-json koa-logger <br />
+        npm i koa-router<br />
+        npm i @types/koa<br />
+        npm i @types/koa-bodyparser<br />
+        npm i @types/koa-json<br />
+        npm i @types/koa-logger<br />
+        npm i @types/koa-router<br />
+        npm i sequelize<br/>
+        npm i @types/sequelize<br/>
+        npm i pg pg-hstore<br/>
+        npm i koa-passport<br/>
+        npm i @types/koa-passport<br/>
+        npm i passport-http<br/>
+        npm i @types/passport-http<br/>
 
 <br />
 
