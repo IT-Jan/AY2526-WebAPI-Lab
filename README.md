@@ -1,4 +1,4 @@
-<img width="825" height="268" alt="image" src="https://github.com/user-attachments/assets/ed025cfc-45d7-403b-bfc0-8a54b9c2903f" />**WebAPI-Lab**
+**WebAPI-Lab**
 
 <b>Packages installation:</b><br />
 
