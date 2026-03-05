@@ -18,7 +18,7 @@ const getAll = async (ctx: RouterContext, next: any) => {
 const getById = async (ctx:RouterContext, next: any) => {
     let id = Number(ctx.params.id);
     let articles = await model.getAll();
-    const index = articles.findIndex(a => a.id === id);
+    const index = articles.findIndex((a: any) => a.id === id);
 
     if (!Number.isInteger(id) || id <= 0 || index === -1) {
 
@@ -68,7 +68,7 @@ const updateArticle = async (ctx: RouterContext, next: any) => {
     const body = ctx.request.body;
     const id = Number(ctx.params.id);
     let articles = await model.getAll();
-    const index = articles.findIndex(a => a.id === id);
+    const index = articles.findIndex((a: any) => a.id === id);
 
     if (!Number.isInteger(id) || id <= 0 || index === -1) {
 
@@ -93,7 +93,7 @@ const updateArticle = async (ctx: RouterContext, next: any) => {
 const deleteArticle = async (ctx: RouterContext, next: any) => {
     const id = Number(ctx.params.id);
     let articles = await model.getAll();
-    const index = articles.findIndex(a => a.id === id);
+    const index = articles.findIndex((a: any) => a.id === id);
 
     if (!Number.isInteger(id) || id <= 0 || index === -1) {
 
