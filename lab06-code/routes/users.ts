@@ -18,8 +18,9 @@ const getAll = async (ctx: RouterContext, next: any) => {
 const getById = async (ctx:RouterContext, next: any) => {
     let id = Number(ctx.params.id);
     let users = await model.getAll();
+    const index = users.findIndex((a: any) => a.id === id);
 
-    if (!Number.isInteger(id) || id > users.length || id <= 0) {
+    if (!Number.isInteger(id) || id <= 0 || index === -1) {
 
         ctx.status = 400;
         ctx.body = "Invild ID";
@@ -54,8 +55,9 @@ const updateUser = async (ctx: RouterContext, next: any) => {
     const body = ctx.request.body;
     const id = Number(ctx.params.id);
     let users = await model.getAll();
+    const index = users.findIndex((a: any) => a.id === id);
 
-    if (!Number.isInteger(id) || id > users.length || id <= 0) {
+    if (!Number.isInteger(id) || id <= 0 || index === -1) {
 
         ctx.status = 400;
         ctx.body = "Invild ID";
@@ -78,8 +80,9 @@ const updateUser = async (ctx: RouterContext, next: any) => {
 const deleteUser = async (ctx: RouterContext, next: any) => {
     const id = Number(ctx.params.id);
     let users = await model.getAll();
+    const index = users.findIndex((a: any) => a.id === id);
 
-    if (!Number.isInteger(id) || id > users.length || id <= 0) {
+    if (!Number.isInteger(id) || id <= 0 || index === -1) {
 
         ctx.status = 400;
         ctx.body = "Invild ID";
