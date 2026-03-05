@@ -18,7 +18,9 @@
         npm i @types/passport-http
         npm i jsonschema
         npm i @type\jsonschema
-
+        npm i koa-static
+        npm i @types/koa-static
+        
 <br />
 
 <b>Setup the Web Server:</b><br />
