@@ -1,4 +1,4 @@
-**WebAPI-Lab**
+<img width="825" height="268" alt="image" src="https://github.com/user-attachments/assets/ed025cfc-45d7-403b-bfc0-8a54b9c2903f" />**WebAPI-Lab**
 
 <b>Packages installation:</b><br />
 
@@ -39,3 +39,17 @@
     tsc<br />
     node .\out\ <br />
 <br />
+
+<b>Set up the database pgAdmin4 & import sql file (Steps):</b><br />
+1. Download provided SQL
+2. Open pgAdmin4 and Login (postgres:postgres)
+3. Select Tools > Query Tool
+   <img width="465" height="283" alt="image" src="https://github.com/user-attachments/assets/20c9cda5-4a75-46a0-8953-b2aa17d39440" />
+4. Select Article.sql and User.sql and Click Run
+   <img width="1425" height="677" alt="image" src="https://github.com/user-attachments/assets/f59e7293-8210-4758-b882-3b3d49ae1e67" />
+6. View and Edit data in table
+   <img width="840" height="869" alt="image" src="https://github.com/user-attachments/assets/e346a8f5-2fe4-426d-91db-38b1ecb323ae" />
+7. Set the password for users and click save to database
+   <img width="825" height="268" alt="image" src="https://github.com/user-attachments/assets/636e7b55-bf9c-4bff-b09d-7887c7266718" />
+
+
