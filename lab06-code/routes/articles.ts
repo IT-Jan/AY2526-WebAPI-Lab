@@ -1,6 +1,7 @@
 import Router, {RouterContext} from 'koa-router';
 import bodyParser from 'koa-bodyparser';
 import * as model from '../models/articles';
+import { basicAuth } from '../controllers/auth';
 
 const router = new Router({prefix: '/api/v1/articles'});
 
@@ -17,8 +18,9 @@ const getAll = async (ctx: RouterContext, next: any) => {
 const getById = async (ctx:RouterContext, next: any) => {
     let id = Number(ctx.params.id);
     let articles = await model.getAll();
+    const index = articles.findIndex(a => a.id === id);
 
-    if (!Number.isInteger(id) || id > articles.length || id <= 0) {
+    if (!Number.isInteger(id) || id <= 0 || index === -1) {
 
         ctx.status = 400;
         ctx.body = "Invild ID";
@@ -66,8 +68,9 @@ const updateArticle = async (ctx: RouterContext, next: any) => {
     const body = ctx.request.body;
     const id = Number(ctx.params.id);
     let articles = await model.getAll();
+    const index = articles.findIndex(a => a.id === id);
 
-    if (!Number.isInteger(id) || id > articles.length || id <= 0) {
+    if (!Number.isInteger(id) || id <= 0 || index === -1) {
 
         ctx.status = 400;
         ctx.body = "Invild ID";
@@ -90,8 +93,9 @@ const updateArticle = async (ctx: RouterContext, next: any) => {
 const deleteArticle = async (ctx: RouterContext, next: any) => {
     const id = Number(ctx.params.id);
     let articles = await model.getAll();
+    const index = articles.findIndex(a => a.id === id);
 
-    if (!Number.isInteger(id) || id > articles.length || id <= 0) {
+    if (!Number.isInteger(id) || id <= 0 || index === -1) {
 
         ctx.status = 400;
         ctx.body = "Invild ID";
@@ -114,10 +118,10 @@ const deleteArticle = async (ctx: RouterContext, next: any) => {
 
 // List the routes here
 
-router.get('/', getAll);
-router.get('/:id', getById);
-router.post('/', bodyParser(), createArticle);
-router.put('/:id', bodyParser(), updateArticle);
-router.delete('/:id', deleteArticle);
+router.get('/', basicAuth, getAll);
+router.get('/:id', basicAuth, getById);
+router.post('/', basicAuth, bodyParser(), createArticle);
+router.put('/:id', basicAuth, bodyParser(), updateArticle);
+router.delete('/:id',basicAuth,  deleteArticle);
 
 export { router };
