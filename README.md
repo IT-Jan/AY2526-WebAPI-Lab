@@ -1,5 +1,18 @@
 **WebAPI-Lab**
 
+<b>Setup the Web Server:</b><br />
+    1. npx tsc -init<br />
+    2. Create "out" folder<br />
+    3. Copy Packages installation section to install the packages in VSCode
+    3. Set up the database pgAdmin4 & import sql files<br />
+    4. edit "tsconfig.json"<br />
+    
+        "outDir": "./out",
+        ...
+        "verbatimModuleSyntax": false,
+        
+<br />
+
 <b>Packages installation:</b><br />
 
         npm i koa koa-bodyparser koa-json koa-logger
@@ -20,18 +33,6 @@
         npm i @type\jsonschema
         npm i koa-static
         npm i @types/koa-static
-        
-<br />
-
-<b>Setup the Web Server:</b><br />
-    1. npx tsc -init<br />
-    2. Create "out" folder<br />
-    3. Set up the database pgAdmin4 & import sql files<br />
-    4. edit "tsconfig.json"<br />
-    
-        "outDir": "./out",
-        ...
-        "verbatimModuleSyntax": false,
         
 <br />
 
