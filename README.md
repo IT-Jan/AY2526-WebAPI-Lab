@@ -16,6 +16,8 @@
         npm i @types/koa-passport
         npm i passport-http
         npm i @types/passport-http
+        npm i jsonschema
+        npm i @type\jsonschema
 
 <br />
 
