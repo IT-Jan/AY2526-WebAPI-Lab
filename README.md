@@ -1,7 +1,7 @@
 **WebAPI-Lab**
 
 <b>Setup the Web Server:</b><br />
-    1. npx tsc -init<br />
+    1. initialize env: npx tsc -init<br />
     2. Create "out" folder<br />
     3. Copy the Packages installation section to install the packages in VSCode
     3. Set up the database pgAdmin4 & import sql files<br />
@@ -37,14 +37,18 @@
 <br />
 
 <b>Start your backend:</b><br />
-    tsc<br />
-    node .\out\ <br />
+
+        tsc
+        node .\out\
+    
 <br />
 
 <b>Start your frontend:</b><br />
-    npm init vite@latest frontend<br />
-    cd frontend<br />
-    npm run dev<br />
+
+        npm init vite@latest frontend
+        cd frontend
+        npm run dev
+    
 <br />
 
 <b>Frontend Packages installation:</b><br />
