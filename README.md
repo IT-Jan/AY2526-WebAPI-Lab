@@ -48,10 +48,12 @@
 <br />
 
 <b>Frontend Packages installation:</b><br />
+
         npm i antd
         npm i react-router-dom
         npm i axios
         npm i js-base64
+        
 <br />
 
 <b>Set up the database pgAdmin4 & import sql file (Steps):</b><br />
