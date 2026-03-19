@@ -3,7 +3,7 @@
 <b>Setup the Web Server:</b><br />
     1. npx tsc -init<br />
     2. Create "out" folder<br />
-    3. Copy Packages installation section to install the packages in VSCode
+    3. Copy the Packages installation section to install the packages in VSCode
     3. Set up the database pgAdmin4 & import sql files<br />
     4. edit "tsconfig.json"<br />
     
@@ -13,7 +13,7 @@
         
 <br />
 
-<b>Packages installation:</b><br />
+<b>Backend Packages installation:</b><br />
 
         npm i koa koa-bodyparser koa-json koa-logger
         npm i koa-router
@@ -36,9 +36,22 @@
         
 <br />
 
-<b>Running the code:</b><br />
+<b>Start your backend:</b><br />
     tsc<br />
     node .\out\ <br />
+<br />
+
+<b>Start your frontend:</b><br />
+    npm init vite@latest frontend<br />
+    cd frontend<br />
+    npm run dev<br />
+<br />
+
+<b>Frontend Packages installation:</b><br />
+        npm i antd
+        npm i react-router-dom
+        npm i axios
+        npm i js-base64
 <br />
 
 <b>Set up the database pgAdmin4 & import sql file (Steps):</b><br />
