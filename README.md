@@ -45,7 +45,10 @@
 
 <b>Start your frontend:</b><br />
 
+        npm install -g npm@11.12.0
         npm init vite@latest frontend
+            > React
+            > Typescript + React complier
         cd frontend
         npm run dev
     
