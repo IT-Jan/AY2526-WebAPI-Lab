@@ -43,18 +43,9 @@
     
 <br />
 
-<b>Initiate your frontend:</b><br />
-
-        npm init vite@latest frontend
-            > React
-            > Typescript + React complier
-    
-<br />
-
 <b>Start your frontend:</b><br />
 
         npm init vite@latest frontend
-            > Ignore files and continue
             > React
             > Typescript + React complier
         cd frontend
