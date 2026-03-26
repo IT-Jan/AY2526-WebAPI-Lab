@@ -61,6 +61,7 @@
 
 <b>Frontend Packages installation:</b><br />
 
+        npm install -g npm@latest
         npm i antd
         npm i react-router-dom
         npm i axios
