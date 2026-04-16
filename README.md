@@ -33,6 +33,8 @@
         npm i @type\jsonschema
         npm i koa-static
         npm i @types/koa-static
+        npm i cors
+        npm i @koa/cors
         
 <br />
 
@@ -57,8 +59,8 @@
 
         npm install -g npm@latest
         npm i antd
-        npm i react@latest
-        npm i react-router-dom@latest
+        npm i react@19.2.4
+        npm i react-router-dom@19.2.4
         npm i axios
         npm i js-base64
         
