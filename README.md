@@ -59,8 +59,8 @@
 
         npm install -g npm@latest
         npm i antd
-        npm i react@19.2.4
-        npm i react-router-dom@19.2.4
+        npm i react@latest
+        npm i react-router-dom@latest
         npm i axios
         npm i js-base64
         
