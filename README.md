@@ -35,6 +35,8 @@
         npm i @types/koa-static
         npm i cors
         npm i @koa/cors
+        npm i -D jest ts-jest @types/jest supertest @types/supertest
+        npx ts-jest config:init
         
 <br />
 
@@ -55,6 +57,8 @@
     
 <br />
 
+
+
 <b>Frontend Packages installation:</b><br />
 
         npm install -g npm@latest
@@ -63,6 +67,7 @@
         npm i react-router-dom@latest
         npm i axios
         npm i js-base64
+        npm i -D jest ts-jest @types/jest supertest @types/supertest
         
 <br />
 
