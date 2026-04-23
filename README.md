@@ -37,6 +37,7 @@
         npm i @koa/cors
         npm i -D jest ts-jest @types/jest supertest @types/supertest
         npx ts-jest config:init
+        npm i --save-dev eslint @eslint/js typescript-eslint
         
 <br />
 
